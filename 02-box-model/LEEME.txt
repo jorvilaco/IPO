@@ -1,0 +1,4 @@
+Este ejercicio es para practicar con el centrado horizontal de los elementos HTML.
+Este centrado se mantien según varía el tamaño de la pantalla.
+ 
+

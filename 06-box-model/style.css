@@ -1,0 +1,17 @@
+body {
+  height: 100vh;
+  background-color: lemonchiffon;
+}
+
+.contenedor {
+  background-color: blueviolet;
+  height: 30%;
+}
+
+.caja {
+  background-color: coral;
+}
+
+.lorem {
+  background-color: burlywood;
+}

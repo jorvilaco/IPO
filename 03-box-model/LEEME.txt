@@ -1,0 +1,5 @@
+Este ejercicio es para practicar las propiedades border-radius y box-shadow. 
+Estas dos propiedades nos permiten decorar las cajas con distintas estéticas.
+También se deben respetar el ajuste y alineamiento de los contenidos 
+según varia el tamaño de la pantalla.
+

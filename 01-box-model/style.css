@@ -1,0 +1,16 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.elemento--div {
+  background-color: yellow;
+}
+
+.elemento--p {
+  background-color: lightgrey;
+}
+.elemento--span {
+  background-color: orange;
+}

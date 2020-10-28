@@ -1,0 +1,17 @@
+.contenedor {
+  background-color: lightyellow;
+}
+
+.lorem--1 {
+  background-color: coral;
+  height: 65px;
+}
+
+.lorem--2 {
+  border: 3px solid coral;
+  height: 85px;
+}
+
+.texto {
+  background-color: lightcyan;
+}

@@ -1,0 +1,4 @@
+Este ejercicio es para practicar la propiedad outline. El ejercicio superpone el uso 
+de border y outline para diferenciar entre uno y otro. 
+
+

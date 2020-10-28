@@ -1,0 +1,4 @@
+Este ejercicio es para practicar el desbordamiento (overflow) 
+de contenido en los elememento bloque. Vemos dos estrategias para 
+abordar el desbordamiento: la ocultación y el uso de barra de desplazamiento .
+

@@ -1,0 +1,8 @@
+Este ejercicio es para practicar las distintas formas de ajustar 
+medidas. En particular se usaran las unidades px.%, vh y vw.
+
+Podemos ver el efecto de combinar valores relativos para mantener proporciones 
+entre distintos elementos y respecto a la pantalla. 
+En el ejercicio el contenedor 1/3, indica que su anchura es un tercio de la 
+anchura de su ancestro, que a su vez varía en tamaño en función del tamaño de la 
+pantalla.  

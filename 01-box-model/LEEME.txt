@@ -1,0 +1,3 @@
+Este ejercicio se centra en las propiedades margin y padding de los elementos HTML.
+También se practica el ajuste dinámico de la longitud de la caja según varía 
+el tamaño de la pantalla. 

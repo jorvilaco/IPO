@@ -1,0 +1,16 @@
+.texto {
+  background-color: darkslategray;
+}
+
+/* .resalte {
+
+} */
+
+.lorem--1 {
+  background-color: coral;
+}
+
+.lorem--2 {
+  border: 3px solid coral;
+  width: 600px;
+}

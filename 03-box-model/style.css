@@ -1,0 +1,19 @@
+.contenedor {
+  background-color: chartreuse;
+}
+
+.lorem--1 {
+  border: 3px solid coral;
+}
+
+.texto {
+  background-color: rgb(251, 241, 241);
+}
+
+.resalte {
+  background-color: yellow;
+}
+
+.lorem--2 {
+  background-color: coral;
+}
