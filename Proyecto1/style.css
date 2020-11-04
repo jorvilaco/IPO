@@ -76,3 +76,6 @@ input.form__input {
   border-left-width: 7px;
   
 }
+.form__error-msg{
+color: red;
+}
