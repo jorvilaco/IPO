@@ -1,0 +1,30 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #e0f2e9;
+  height: 100vh;
+}
+
+.registro {
+  background-color: #ceb5a7;
+}
+
+.btn {
+  background-color: #a17c6b;
+  color: #fff;
+}
+
+.btn:focus {
+  outline: none;
+}
+
+.btn:hover {
+  cursor: pointer;
+}
+
+.form__input:focus {
+  outline: none;
+}

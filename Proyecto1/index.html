@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Formulario de registro en el sistema</title>
+  </head>
+
+  <body>
+    <article class="registro">
+      <h1>Registro de usuario</h1>
+      <form id="form" class="form">
+        <div class="form__control">
+          <label class="form__label" for="usuario">Usuario</label>
+          <input
+            class="form__input"
+            type="text"
+            id="usuario"
+            placeholder="Ej: Nombre de usuario"
+          />
+          <small class="form__error-msg">
+            <!-- Mensaje de Error generado por JS-->
+          </small>
+        </div>
+
+        <div class="form__control">
+          <label class="form__label" for="contraseña">Contraseña</label>
+          <input
+            class="form__input"
+            type="password"
+            id="contraseña"
+            placeholder="Contraseña (debe contener letras y números)"
+            autocomplete="off"
+          />
+          <small class="form__error-msg">
+            <!-- Mensaje de error generado por JS --></small
+          >
+        </div>
+
+        <div class="form__btns">
+          <button id="cancelacion" class="btn">Cancelar</button>
+          <button id="envio" class="btn">Enviar</button>
+        </div>
+      </form>
+    </article>
+
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,23 @@
+Este ejercicio musetra un formulario de regitro a un sistema. 
+Presenta dos botones: Cancelar y Enviar. El boton Cancelar reinicia los datos del 
+formulario. El botón Enviar valida los datos introducidos, sin transmitir 
+los datos a ningún servidor. 
+
+Las validaciones son fundamentalmente dos:
+   - Las entradas Usuario y Clave no pueden estar vacías
+   - La clave debe cumplir unas ciertas restricciones
+
+El aspecto del formulario cambiará según los datos introducidos en la 
+entrada son correctos o no. En caso de error, también se mostrará un 
+mensaje de error indicando la causa.
+
+NOTAS:
+   * Para evitar el envío de los datos al servidor se usará e.preventDefault() 
+     aplicado al evento e asociado con "submit" 
+   * Para definir el patrón de la clave se utilizarán expresiones regulares
+
+
+  
+ ()) (se centra en las propiedades margin y padding de los elementos HTML.
+También se practica el ajuste dinámico de la longitud de la caja según varía 
+el tamaño de la pantalla. 
