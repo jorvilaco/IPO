@@ -58,3 +58,21 @@ input.form__input {
 .form__input:focus {
   outline: none;
 }
+.form__input{
+  border-color: black;
+  border-left-width: 5px;
+}
+.form__control--exito .form__input{
+  border-style: solid;
+  border-left-color: #008000;
+  border-left-width: 7px;
+  
+  
+
+}
+.form__control--error .form__input{
+  border-style: solid;
+  border-left-color: #ff0000;
+  border-left-width: 7px;
+  
+}
