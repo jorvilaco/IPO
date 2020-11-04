@@ -1,13 +1,22 @@
 .contenedor {
   background-color: chartreuse;
+  display: block;
+  padding: 10px;
+  border: solid 2px cadetblue;
+  border-radius: 10px;
 }
 
 .lorem--1 {
   border: 3px solid coral;
+  margin: 30px 20% 20px 20%;
+  padding-top: 40px;
+  text-align: right;
 }
 
 .texto {
   background-color: rgb(251, 241, 241);
+  border-top: solid blue;
+  border-right: dashed blue;
 }
 
 .resalte {
