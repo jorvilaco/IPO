@@ -17,6 +17,10 @@ body {
   padding: 10px 50px 10px 50px;
 }
 
+.registro h1 {
+  text-align: center;
+}
+
 .btn {
   background-color: #a17c6b;
   color: #fff;
