@@ -44,7 +44,17 @@ input.form__input {
 
 .btn {
   background-color: #a17c6b;
+  padding-top: 0.5%;
+  width: 20%;
   color: #fff;
+  text-align: center;
+  border-radius:5px ;
+  border: 0;
+  padding-bottom: 0.5%;
+  display: inline-block;
+}
+.form__btns {
+  margin-left: 38%;
 }
 
 .btn:focus {
