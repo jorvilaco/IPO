@@ -17,12 +17,21 @@
   background-color: rgb(251, 241, 241);
   border-top: solid blue;
   border-right: dashed blue;
+  padding: 20px 0px;
+  text-align: center;
 }
 
 .resalte {
   background-color: yellow;
+  border: solid 2px blue;
+  padding: 5px;
+  box-shadow: 5px 5px 5px blue;
+  margin-right: 10px;
 }
 
 .lorem--2 {
   background-color: coral;
+  display: block;
+  margin: 30px;
+  box-shadow: 10px 10px 2px red, -15px -15px 5px blue;
 }
