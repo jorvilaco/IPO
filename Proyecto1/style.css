@@ -88,7 +88,7 @@ input.form__input {
 }
 .form__control--exito .form__input{
   border-style: solid;
-  border-left-color: #008000;
+  border-color: #008000;
   border-left-width: 7px;
   
   
@@ -96,7 +96,10 @@ input.form__input {
 }
 .form__control--error .form__input{
   border-style: solid;
-  border-left-color: #ff0000;
+  border-color: #ff0000;
   border-left-width: 7px;
   
+}
+.form__error-msg{
+color: red;
 }
