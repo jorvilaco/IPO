@@ -1,23 +1,30 @@
 * {
   margin: 0;
+
   box-sizing: border-box;
 }
 
 body {
   background-color: #e0f2e9;
+
   height: 100vh;
 }
 
 .registro {
   background-color: #ceb5a7;
-  margin: 10% 10% auto 10%;
+  
   display: block;
+
+  margin: 10% 10% auto 10%;
+  border-radius: 5px;
   border: solid 1px black;
-  padding: 10px 50px 10px 50px;
+  padding: 20px 5% 20px 5%;
+  
 }
 
 .registro h1 {
   text-align: center;
+  font-family: sans-serif;
 }
 
 
@@ -30,29 +37,34 @@ body {
 
 label.form__label {
   display: block;
+
   font-weight: 600;
   font-family: sans-serif;
+
   margin-top: 5px;
 }
 
 input.form__input {
   display: block;
   width: 100%;
+
   border-radius: 5px;
   margin: 4px 0px;
 }
 
 .btn {
   background-color: #a17c6b;
-  padding-top: 0.5%;
   color: #fff;
-  text-align: center;
-  border-radius: 5px;
-  border: 0;
-  padding-bottom: 0.5%;
+
   display: inline-block;
-  padding: 5px 15%;
+
+  text-align: center;
   font-size: 10px;
+
+  border-radius: 5px;
+  border: 0px;
+  padding: 5px 15%;
+  
 }
 
 .form__btns {
