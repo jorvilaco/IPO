@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Mecanografía</title>
+  </head>
+
+  <body>
+    <header class="cabecera">
+      <h1 class="titulo">Test de mecanografía</h1>
+    </header>
+
+    <main class="principal">
+      <article class="ejercicio">
+        <div class="controles">
+          <div class="cambio" id="comienzo">Comenzar</div>
+          <div class="cambio" id="detencion">Detener</div>
+        </div>
+
+        <div class="marcador">
+          <!-- JS modifica los valores de tiempo y puntos -->
+          <small>Tiempo (sgs): <span class="dato" id="tiempo">0</span></small>
+          <small>Palabras correctas: <span class="dato" id="palabrasCorrectas">0</span></small>
+        </div>
+
+        <div class="area__palabra">
+          <p>Teclee la siguiente palabra</p>
+          <!-- JS modifica la palabra -->
+          <p class="palabra" id="palabra">nuez</p>
+        </div>
+        <input class="area__entrada" type="text" id="entrada" autocomplete="off" placeholder="Escriba la palabra" />
+      </article>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>

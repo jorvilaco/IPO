@@ -1,0 +1,77 @@
+/************************************/
+/*    EQUIPO  <<NOMBRE EQUIPO>>     */
+/************************************/
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100vh;
+  background-color: #f4f7f5;
+}
+
+/* ************************************ */
+
+.cabecera {
+  margin-bottom: 50px;
+}
+
+.titulo {
+  background-color: #08090a;
+  color: white;
+}
+
+/* ************************************ */
+
+.principal {
+  width: 90%;
+}
+
+/* ************************************ */
+
+.ejercicio {
+  background-color: #a7a2a9;
+}
+
+/* ************************************ */
+
+.controles {
+  background-color: #575a5e;
+}
+
+.cambio {
+  cursor: pointer;
+}
+.cambio:hover {
+  background-color: gainsboro;
+}
+
+/* ************************************ */
+
+.marcador {
+  /* Valor por defecto */
+  background-color: transparent;
+}
+
+.dato {
+  background-color: #08090a;
+  color: white;
+}
+
+/* ************************************ */
+.area__palabra {
+  color: white;
+  background-color: #08090a;
+}
+
+.palabra {
+  background-color: white;
+  color: black;
+}
+
+.area__entrada {
+  outline: none;
+}
