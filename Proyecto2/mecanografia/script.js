@@ -56,6 +56,7 @@ const palabras = [
 // Variable que almacenará el temporizador.
 let temporizador;
 
+
 // ==========  Funciones Auxiliares (Helpers)
 
 function actualizaPalabraDeMuestra() {
@@ -88,31 +89,53 @@ function actualizaPalabraDeMuestra() {
   palabra.innerText = nuevaPalabra;
 }
 
+
 function comprobarPalabraMecanografiada(palabraEscritaEnAreaDeTexto) {
   // Comprueba si la palabra escrita en el área de texto
   // coincide con la palabra de muestra generada aleatoriamente.
-  // Si ambas coinciden se deberá:
-  //    -  actualizar el número de palabras correctas
-  //    -  generar aleatoriamente una nueva palabra de muestra
-  //    -  vaciar el área de texto para permitir escribir una nueva palabra
+  // Si ambas coinciden se deberá:  
+  
+  if (palabra.innerHTML == palabraEscritaEnAreaDeTexto){
+    //    -  actualizar el número de palabras correctas
+    var contador = parseInt(palabrasCorrectas.innerHTML);
+    contador = contador +1;
+    palabrasCorrectas.innerHTML = contador;
+    //    -  generar aleatoriamente una nueva palabra de muestra
+    actualizaPalabraDeMuestra();
+    //    -  vaciar el área de texto para permitir escribir una nueva palabra
+    entrada.value = "";
+  }
 }
 
 // Funciones para gestionar el temporizador
 
 function actualizaTiempo() {
+  
   //  Se incrementa en una unidad el contador de tiemp
+  var contador = parseInt(tiempo.innerHTML);
+  contador = contador +1;
+  tiempo.innerHTML = contador;
 }
 
 function comenzarTestDeVelocidad() {
   // Realiza todos los preparativos para comenzar
   // un nuevo test de velocidad
   //   -  Se actualiza la palabra a escribir
+  actualizaPalabraDeMuestra();
   //   -  Se inicializan los contadores de tiempo y de puntos
+  palabrasCorrectas.innerHTML = 0;
+  tiempo.innerHTML = 0;
   //   -  Se pone en foco el área de texto para que el usuario pueda
   //      comenzar a escribir inmediatamente
   //      https://developer.mozilla.org/es/docs/Web/API/HTMLElement/focus
+  entrada.focus();
+  // Soluciona el problema que puede darse si se pulsa dos veces el boton comenzar antes de darle a detener
+  if(temporizador !=0)
+    clearInterval(temporizador);
   //   -  Se inicializa el temporizador que se encargaraá de ejecutar
   //      con una cadencia de 1000 (1 segundo) la función actualizaTiempo
+  temporizador = setInterval(actualizaTiempo, 1000);
+  
 }
 
 function detenerTestDeVelocidad() {
@@ -120,6 +143,7 @@ function detenerTestDeVelocidad() {
   //  OBSERVACIÓN: Al detener el tiempo, la página refleja en el marcador
   //  el resultado del test. Es decir, el número de segundos empleados y el numero
   //  de palabras correctamente mecanografiadas
+  clearInterval(temporizador);
 }
 
 // ==========  Gestores de Eventos
