@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Reservas</title>
+  </head>
+
+  <body>
+    <div class="lienzo">
+      <div class="titulo-proyecto">
+        Reservas - Equipo
+        <span class="equipo" id="equipo">
+          <!-- JS modifica el nombre del equipo  -->
+          meine
+        </span>
+      </div>
+
+      <div class="espectaculos">
+        <div>
+          <input type="radio" name="espectaculos" data-espectaculo="A" data-precio="10" />
+          <label class="espectaculos__label">A (10€) </label>
+        </div>
+        <div>
+          <input type="radio" name="espectaculos" data-espectaculo="B" data-precio="20" />
+          <label class="espectaculos__label">B (20€) </label>
+        </div>
+        <div>
+          <input type="radio" name="espectaculos" data-espectaculo="C" data-precio="30" />
+          <label class="espectaculos__label">C (30€) </label>
+        </div>
+        <div>
+          <input type="radio" name="espectaculos" data-espectaculo="D" data-precio="40" />
+          <label class="espectaculos__label">D (40€) </label>
+        </div>
+        <div>
+          <input type="radio" name="espectaculos" data-espectaculo="E" data-precio="50" />
+          <label class="espectaculos__label">E (50€) </label>
+        </div>
+        <div>
+          <input type="radio" name="espectaculos" data-espectaculo="F" data-precio="60" />
+          <label class="espectaculos__label">F (60€) </label>
+        </div>
+        <div>
+          <input type="radio" name="espectaculos" data-espectaculo="G" data-precio="70" />
+          <label class="espectaculos__label">G (70€) </label>
+        </div>
+      </div>
+
+      <ul class="leyendas">
+        <li class="leyenda">
+          <div class="asiento"></div>
+          <small>Libre</small>
+        </li>
+        <li class="leyenda">
+          <div class="asiento asiento--seleccionado"></div>
+          <small>Seleccionado</small>
+        </li>
+        <li class="leyenda">
+          <div class="asiento asiento--ocupado"></div>
+          <small>Ocupado</small>
+        </li>
+      </ul>
+
+      <div class="sala">
+        <div class="sala__pantalla"></div>
+        <div class="sala__aforo" id="aforo">
+          <!-- JS añade los asientos del aforo -->
+          <!-- Los asientos pueden ser de tres tipos: ocupados, seleccionados y libres  -->
+          <!-- El tipo de asiento se identifica mediante class -->
+          <!-- <div class="asiento asiento--ocupado"></div>
+               <div class="asiento asiento--seleccionado"></div>
+               <div class="asiento"></div> -->
+        </div>
+      </div>
+
+      <div class="informacion">
+        <!-- JS modifica los contenidos de los elementos span -->
+        <div>Asientos: <span class="contador" id="contador">0</span></div>
+        <div>Total: <span class="precio" id="precio">000€</span></div>
+      </div>
+      <div class="btns">
+        <button class="btn" id="cancelar">Cancelar</button>
+        <button class="btn" id="pagar">Pagar</button>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

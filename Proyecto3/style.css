@@ -1,0 +1,135 @@
+/**********************************************************************/
+/*  PROYECTO RESERVAS             */
+/*  EQUIPO <<NOMBRE DE EQUIPO>>   */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* Declaración para depurar la composición */
+  /* outline: 1px solid red; */
+}
+
+body {
+  background-color: lightgoldenrodyellow;
+
+  /* Su contenido debe estar completamente 
+     centrado en la pantalla */
+}
+
+/**********************************************************************/
+
+.lienzo {
+  background-color: silver;
+  /* Declaración por defecto (es innecesaria)
+     Se incluye para indicar que no puede modificada. */
+  height: auto;
+}
+
+/**********************************************************************/
+
+.titulo-proyecto {
+  /* Esta regla debe dejarse tal cual */
+  margin-top: 0.7rem;
+  padding: 5px 13px;
+  background-color: whitesmoke;
+}
+
+.equipo {
+  /* Esta regla debe dejarse tal cual */
+  text-transform: uppercase;
+}
+
+/**********************************************************************/
+
+.espectaculos {
+  background-color: gray;
+  color: white;
+}
+
+.espectaculos__label {
+  color: whitesmoke;
+}
+
+/**********************************************************************/
+
+.leyendas {
+  background-color: darkgray;
+}
+
+.leyenda {
+  color: black;
+}
+
+/**********************************************************************/
+
+.sala {
+  background-color: grey;
+}
+
+.sala__pantalla {
+  background-color: ivory;
+  height: 70px;
+  /* Declaración por defecto (es innecesaria)
+     Se incluye para indicar que no puede modificada. */
+  width: auto;
+}
+
+.sala__aforo {
+  /* Separación entre asientos */
+  gap: 25px;
+}
+
+/**********************************************************************/
+
+.asiento {
+  width: 25px;
+  height: 25px;
+  background-color: whitesmoke;
+}
+
+.asiento--ocupado {
+  background-color: lightcoral;
+}
+
+.asiento--seleccionado {
+  background-color: lightskyblue;
+}
+
+/* No es factible reservar un asiento ocupado. 
+   Para reforzar esta restricción se modifica 
+   el estilo al sobrevolar con el cursor sobre 
+   un asiento no ocupado (i.e. libre o selecciodo) 
+*/
+.sala .asiento:hover:not(.asiento--ocupado) {
+  cursor: pointer;
+  background-color: blueviolet;
+}
+
+/**********************************************************************/
+
+.informacion {
+  color: brown;
+}
+
+.contador {
+  color: darkblue;
+  background-color: white;
+  /* Anchura para admitir números de dos cifras*/
+  width: 35px;
+}
+
+.precio {
+  color: darkblue;
+  background-color: white;
+  /* Anchura para admitir números de tres cifras*/
+  width: 47px;
+}
+
+.btns {
+  margin-bottom: 13px;
+}
+
+.btn {
+  padding: 5px 10px;
+}
