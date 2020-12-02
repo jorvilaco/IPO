@@ -101,7 +101,7 @@ function comienzo() {
     // Añade los asientos al DOM a partir de la variable asientos
     let contenidoHTML = "";
     let clase = "";
-
+    
     asientos.forEach((asiento, indice) => {
       switch (asiento) {
         case LIBRE:
@@ -220,35 +220,75 @@ function tipoDeAsiento(elementoHTML) {
 }
 
 function actualizaTipoDeAsiento(elementoHTML) {
+  let indice = elementoHTML.dataset.index;
+  let tipo = tipoDeAsiento(elementoHTML);
   // Las actualizaciones factibles son si se ha actuado sobre asientos
   //   a) libres (que pasan a estar seleccionados)
   //   b) seleccionados (que pasan a estar libres)
+  function generaAforoDOMSegunArrayAsientos() {
+    // Añade los asientos al DOM a partir de la variable asientos
+    let contenidoHTML = "";
+    let clase = "";
+    
+    asientos.forEach((asiento, indice) => {
+      switch (asiento) {
+        case LIBRE:
+          clase = valorClassDeAsientoLIBRE;
+          break;
+        case OCUPADO:
+          clase = valorClassDeAsientoOCUPADO;
+          break;
+        case SELECCIONADO:
+          clase = valorClassDeAsientoSELECCIONADO;
+          break;
+      }
+      contenidoHTML += `<div class="${clase}" data-index="${indice}"></div>`;
+    });
+    aforo.innerHTML = contenidoHTML;
+  }
+  if (tipo == 0){
+    asientos[indice] = 2;
+  }
+  if (tipo == 2){
+    asientos[indice] = 0;
+  }
   // La actualización debe incluir:
   //   - actualizar el array asientos en JS y LocalStorage
+  actualizaAsientosEnAlmacenLocal();
   //   - actualizar la página web (color del asiento y los datos panel informativo de la reserva)
+  generaAforoDOMSegunArrayAsientos();
+  actualizaPanelDeInformacion();
 }
 
 function actualizaInformacionDelEspectaculo(nombre) {
-  // Actualizar la variable espectaculo en JS y LocalStorage
+  // Actualizar la variable espectaculo en JS y LocalStorage  
+  espectaculo = nombre;
+  actualizaEspectaculoEnAlmacenLoca()
   // Se actualiza el panel de información
+  actualizaPanelDeInformacion()
 }
 
 //  Funciones para gestionar LocalStorage
 
 function recuperaAsientosDelAlmacenLocal() {
   // Recupera y devuelve la variable asientos de localStorage
+  return JSON.parse(localStorage.getItem("asientos"));
+  
 }
 
 function recuperaEspectaculoDelAlmacenLocal() {
   // Recupera y devuelve la variable espectaculo de localStorage
+  return JSON.parse(localStorage.getItem("espectaculo"));
 }
 
 function actualizaAsientosEnAlmacenLocal() {
   // Actualiza la varible asientos de localStorage con el valor de la variable asientos
+  localStorage.setItem("asientos", JSON.stringify(asientos));
 }
 
 function actualizaEspectaculoEnAlmacenLoca() {
   // Actualiza la varible especataculo de localStorage con el valor de la variable espectaculo
+  localStorage.setItem("espectaculo", JSON.stringify(espectaculo));
 }
 
 // Gestores de eventos:
