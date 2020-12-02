@@ -3,7 +3,7 @@
 // El premabulo tiene como cometido la identificación de la autoría del trabajo
 // El nombre será mostrada en el elemento HTML #equipo de la página web
 // Cada equipo debe actualizar la constante con el nombre del equipo
-const nombreDelEquipoDeLaboratorio = "XXXXX";
+const nombreDelEquipoDeLaboratorio = "PLATA";
 document.getElementById("equipo").innerHTML = nombreDelEquipoDeLaboratorio;
 
 // PROYECTO RESERVAS
