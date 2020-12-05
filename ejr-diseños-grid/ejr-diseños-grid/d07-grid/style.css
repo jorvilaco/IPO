@@ -1,0 +1,32 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  background-color: lightgoldenrodyellow;
+}
+
+.contenedor-01 {
+  background-color: blanchedalmond;
+}
+
+.contenedor-02 {
+  background-color: cadetblue;
+}
+
+.contenido {
+  border: 1px solid black;
+}
+.contenido-01-A {
+  background-color: chartreuse;
+}
+.contenido-01-B {
+  background-color: rosybrown;
+}
+.contenido-01-C {
+  background-color: chartreuse;
+}
+.contenido-01-D {
+  background-color: rosybrown;
+}

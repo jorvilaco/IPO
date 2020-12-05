@@ -1,0 +1,24 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: grid;
+  height: 100vh;
+}
+
+.contenedor {
+  background-color: antiquewhite;
+  width: 70vw;
+  height: 40vh;
+  box-shadow: -5px 5px 5px  #FF5733;
+  border-radius: 10px;
+}
+
+
+.item {
+  height: 100%;
+  display: grid;
+}

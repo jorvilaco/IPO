@@ -1,0 +1,3 @@
+Este ejercicio muesta como centrar un elementos en la pantalla tanto vertical como 
+horizontalmente usando diseño Grid.
+

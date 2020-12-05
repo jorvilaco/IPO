@@ -1,0 +1,30 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: lightgoldenrodyellow;
+  color: white;
+  text-align: center;
+}
+
+header {
+  background-color: purple;
+  color: white;
+}
+
+main {
+  background-color: lemonchiffon;
+}
+
+article {
+  background-color: lightskyblue;
+  color: white;
+}
+
+footer {
+  background-color: black;
+  color: white;
+}

@@ -1,0 +1,21 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+.contenedor {
+  display: grid;
+  background-color: lightgoldenrodyellow;
+}
+
+.span--12 {
+  background-color: lightpink;
+}
+
+.span--8 {
+  background-color: sandybrown;
+}
+
+.span--3 {
+  background-color: darkgrey;
+}

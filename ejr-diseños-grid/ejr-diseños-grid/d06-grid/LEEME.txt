@@ -1,0 +1,9 @@
+Este ejercicio muesta una composición basada en un formación en columnas mediante CSS Grid. 
+En el ejemplo, el diseño se modela con una formación de tres columnas.
+- Las columnas ocupan todo el ancho de forma que crecen a partir de una anchura mínima. 
+- Si el espacio no es suficiente debido a la anchura mínima, se crean nuevas filas 
+  para reubicar los columnas
+
+NOTA: Propón una composición alternativa usando Flexbox y analiza las diferencias
+
+

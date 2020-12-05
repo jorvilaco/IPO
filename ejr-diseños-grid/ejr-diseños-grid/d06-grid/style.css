@@ -1,0 +1,21 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+.contenedor {
+  display: grid;
+  background-color: lightgoldenrodyellow;
+}
+
+.contenido-01 {
+  background-color: lightpink;
+}
+
+.contenido-02 {
+  background-color: sandybrown;
+}
+
+.contenido-03 {
+  background-color: darkgrey;
+}

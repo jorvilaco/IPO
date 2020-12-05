@@ -1,0 +1,9 @@
+Este ejercicio muesta una composición en donde las celdas Grid son 
+a su vez diseños Grid.
+
+NOTA: Cada contenedor Grid es de facto independiente. Actualmente, no hay un 
+mecanismo directo para compartir relaciones métricas complejas entre los contenedores
+más alla de las relaciones proporcionales.
+
+
+

@@ -1,0 +1,5 @@
+Este ejercicio muesta una composición en Franjas mediante CSS Grid. La composición se basa en una
+rejilla de doce columnas. En el ejemplo, las franjas se distribuyen de forma irregular para dar un 
+ligero aspecto de asimietría.  
+
+

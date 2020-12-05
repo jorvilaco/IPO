@@ -1,0 +1,16 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+.contenedor {
+  display: grid;
+}
+
+.lateral {
+  background-color: lightpink;
+}
+
+.principal {
+  background-color: lightgoldenrodyellow;
+}

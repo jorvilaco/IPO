@@ -1,0 +1,4 @@
+Este ejercicio muesta una composición mediante CSS Grid con dos zonas verticales. 
+Las dimensiones se adapatan de forma que la zona izquierda hace el papel de Barra Lateral.
+
+
