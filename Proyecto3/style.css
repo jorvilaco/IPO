@@ -6,13 +6,15 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  height: 100%;
+}
   /* Declaración para depurar la composición */
   /* outline: 1px solid red; */
-}
+
 
 body {
   background-color: lightgoldenrodyellow;
-
+ 
   /* Su contenido debe estar completamente 
      centrado en la pantalla */
   /*display:grid;
@@ -21,6 +23,7 @@ body {
   grid-template-rows:100px  100px 200px 200px 600px 100px 100px   100px;
   grid-template-columns: 100px  400px 300px 400px 100px;
   */
+  
   display:grid;
   grid-template-columns: 10% 80% 10%;
   grid-template-rows: 10% auto 10%;
@@ -72,8 +75,9 @@ body {
   width: 20rem;
   
   display:grid;
+  height: auto;
   grid-template-columns: repeat(3,1fr);
-  padding:0.3rem;
+  padding:0.4rem;
   gap:5px;
 
   border-radius:7px;
@@ -93,22 +97,25 @@ body {
   justify-content: space-around;
   
   width: 17rem;
-  gap:0.7rem;
+  height: auto;
+  gap:0.2rem;
   /*margin-left:50px;
   margin-right:50px;*/
-  padding:0.4rem;
+  padding:0.3rem;
   
-  /*grid-template-columns: repeat(3,1fr);
-  grid-auto-flow: row;
-  justify-items: center;*/
+  
+  grid-template-columns: repeat(3,1fr);
+ 
+  
 }
 
 .leyenda {
   color: black;
   display: flex;
+  height: auto;
   flex-direction:column;
   align-items: center;
-  
+  align-self: center;
 
 }
 
@@ -123,6 +130,7 @@ body {
   padding-left: 2.1rem;
   padding-right: 2.1rem;
   width: 20rem;
+  height: auto;
 /*
   margin-left:500px;
   margin-right:500px;
@@ -148,6 +156,7 @@ body {
   /* Separación entre asientos */
   margin-top:2.8rem;
   gap: 25px;
+  height: auto;
   display: grid;
   grid-template-columns: repeat(5,25px);
   grid-auto-flow: row;
