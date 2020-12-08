@@ -15,9 +15,14 @@ body {
 
   /* Su contenido debe estar completamente 
      centrado en la pantalla */
-  display:grid;
-  grid-template-columns: 5% auto 5%;
-  grid-template-rows: 10% 800px auto;
+  /*display:grid;
+  /*grid-template-columns: 5% auto 5%;
+  grid-template-rows: 10% 800px auto;*//*
+  grid-template-rows:100px  100px 200px 200px 600px 100px 100px   100px;
+  grid-template-columns: 100px  400px 300px 400px 100px;
+  */
+  display:flex;
+  justify-content: center;
 }
 
 /**********************************************************************/
@@ -27,14 +32,8 @@ body {
   /* Declaración por defecto (es innecesaria)
      Se incluye para indicar que no puede modificada. */
   height: auto;
-  grid-column-start: 2;
-  grid-column-end: 2;
-  grid-row-start: 2;
-  grid-row-end: 2;
-  display:grid;
-  grid-template-rows:40px 90px 90px 65% auto;
-  grid-template-columns: auto 300px auto;
-  align-items: center;
+
+
 }
 
 /**********************************************************************/
@@ -44,10 +43,6 @@ body {
   margin-top: 0.7rem;
   padding: 5px 13px;
   background-color: whitesmoke;
-  grid-row-start: 1;
-  grid-row-end: 1;
-  grid-column-start: 2;
-  grid-column-end: 2;
   
 }
 
@@ -61,11 +56,7 @@ body {
 .espectaculos {
   background-color: gray;
   color: white;
-  grid-row-start: 2;
-  grid-row-end: 2;
-  grid-column-start: 2;
-  grid-column-end: 2;
-  /*grid-auto-flow:row;*/
+
   display:grid;
   grid-template-columns: repeat(3,1fr);
   
@@ -80,19 +71,21 @@ body {
 
 .leyendas {
   background-color: darkgray;
-  grid-row-start: 3;
-  grid-row-end: 3;
-  grid-column-start: 2;
-  grid-column-end: 2;
-  display: grid;
-  grid-template-columns: repeat(3,1fr);
-  grid-auto-flow: row;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
   
+  /*grid-template-columns: repeat(3,1fr);
+  grid-auto-flow: row;
+  justify-items: center;*/
 }
 
 .leyenda {
   color: black;
-  display: grid;
+  display: flex;
+  flex-direction:column;
+  align-items: center;
+  
 
 }
 
@@ -100,6 +93,7 @@ body {
 
 .sala {
   background-color: grey;
+  display: grid;
   grid-row-start: 4;
   grid-row-end: 4;
   grid-column-start: 2;
@@ -115,7 +109,7 @@ body {
   height: 70px;
   /* Declaración por defecto (es innecesaria)
      Se incluye para indicar que no puede modificada. */
-  width: auto;
+  /*width: auto;
 }
 
 .sala__aforo {
@@ -164,6 +158,7 @@ body {
   grid-row-end: 5;
   grid-column-start: 2;
   grid-column-end: 2;
+  
 }
 
 .contador {
@@ -182,12 +177,17 @@ body {
 
 .btns {
   margin-bottom: 13px;
+  display:grid;
   grid-row-start: 6;
   grid-row-end: 6;
   grid-column-start: 2;
   grid-column-end: 2;
+  grid-auto-flow:column;
+  gap:10px;/*  hueco entre los botones*/
 }
 
 .btn {
   padding: 5px 10px;
+  
+
 }
