@@ -23,7 +23,7 @@ body {
   */
   display:grid;
   grid-template-columns: 10% 80% 10%;
-  grid-template-rows: 10% auto 10%;
+ /* grid-template-rows: 10% auto 10%;*/
   justify-content:center;
 }
 
@@ -39,7 +39,8 @@ body {
   grid-column-end: 2;
   grid-row-start: 2;
   grid-row-end: 2;
-  display:flex;/*PROBAR GRID*/
+  display:flex;
+  
   gap:0.7rem;
   flex-direction: column;
   /*grid-template-rows:5% 18% 14% 50% 5% 8%;
@@ -135,6 +136,9 @@ body {
   /* Declaración por defecto (es innecesaria)
      Se incluye para indicar que no puede modificada. */
   width: auto;
+  -moz-box-shadow: 2px 0px 20px ivory;
+  -webkit-box-shadow: 2px 0px 20px ivory;
+  box-shadow: 2px 0px 20px ivory;
   
 }
 
@@ -185,7 +189,7 @@ body {
   display: flex;
   grid-auto-flow: column;
   justify-content:center;
-  gap:0.7rem;
+  gap:0.8rem;
 
   
 }
@@ -216,7 +220,7 @@ body {
   display:grid;
   justify-content:center;
   grid-auto-flow:column;
-  gap:0.7rem;/*  hueco entre los botones*/
+  gap:0.2rem;/*  hueco entre los botones*/
   
 }
 
