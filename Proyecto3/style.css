@@ -185,7 +185,7 @@ body {
   display: flex;
   grid-auto-flow: column;
   justify-content:center;
-  margin-left:10px;
+  gap:0.7rem;
 
   
 }
@@ -216,7 +216,7 @@ body {
   display:grid;
   justify-content:center;
   grid-auto-flow:column;
-  gap:10px;/*  hueco entre los botones*/
+  gap:0.7rem;/*  hueco entre los botones*/
   
 }
 
