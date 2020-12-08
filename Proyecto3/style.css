@@ -21,8 +21,10 @@ body {
   grid-template-rows:100px  100px 200px 200px 600px 100px 100px   100px;
   grid-template-columns: 100px  400px 300px 400px 100px;
   */
-  display:flex;
-  justify-content: center;
+  display:grid;
+  grid-template-columns: 10% 80% 10%;
+  grid-template-rows:  auto auto auto;
+  justify-content:center;
 }
 
 /**********************************************************************/
@@ -33,6 +35,16 @@ body {
      Se incluye para indicar que no puede modificada. */
   height: auto;
 
+  grid-column-start: 2;
+  grid-column-end: 2;
+  grid-row-start: 2;
+  grid-row-end: 2;
+  display:flex;/*PROBAR GRID*/
+  gap:0.7rem;
+  flex-direction: column;
+  /*grid-template-rows:5% 18% 14% 50% 5% 8%;
+  grid-template-columns: auto 300px auto;*/
+  align-items: center;
 
 }
 
@@ -59,7 +71,10 @@ body {
 
   display:grid;
   grid-template-columns: repeat(3,1fr);
-  
+  padding:0.3rem;
+  gap:5px;
+
+  border-radius:7px;
   
 }
 
@@ -75,6 +90,11 @@ body {
   flex-direction: row;
   justify-content: space-around;
   
+  gap:0.7rem;
+  /*margin-left:50px;
+  margin-right:50px;*/
+  padding:0.3rem;
+  
   /*grid-template-columns: repeat(3,1fr);
   grid-auto-flow: row;
   justify-items: center;*/
@@ -87,7 +107,6 @@ body {
   align-items: center;
   
 
-
 }
 
 /**********************************************************************/
@@ -95,14 +114,19 @@ body {
 .sala {
   background-color: grey;
   display: grid;
-  grid-row-start: 4;
-  grid-row-end: 4;
-  grid-column-start: 2;
-  grid-column-end: 2;
-  padding-top: 10%;
-  padding-bottom: 10%;
-  padding-left: 15%;
-  padding-right: 15%;
+  
+  padding-top: 0.7rem;
+  padding-bottom: 0.7rem;
+  padding-left: 2.1rem;
+  padding-right: 2.1rem;
+  
+/*
+  margin-left:500px;
+  margin-right:500px;
+*/
+
+  border-radius:7px;
+  justify-content: center;
 }
 
 .sala__pantalla {
@@ -110,14 +134,16 @@ body {
   height: 70px;
   /* Declaración por defecto (es innecesaria)
      Se incluye para indicar que no puede modificada. */
-  /*width: auto;
+  width: auto;
+  
 }
 
 .sala__aforo {
   /* Separación entre asientos */
+  margin-top:2.8rem;
   gap: 25px;
   display: grid;
-  grid-template-columns: repeat(5,1fr);
+  grid-template-columns: repeat(5,25px);
   grid-auto-flow: row;
 
 }
@@ -125,9 +151,13 @@ body {
 /**********************************************************************/
 
 .asiento {
+  display: grid;
   width: 25px;
   height: 25px;
   background-color: whitesmoke;
+  border: 2px solid black;
+  border-top-left-radius: 7px;
+  border-top-right-radius: 7px;
 }
 
 .asiento--ocupado {
@@ -152,13 +182,11 @@ body {
 
 .informacion {
   color: brown;
-  display: grid;
-  grid-template-columns: repeat(2,1fr);
-  grid-auto-flow: row;
-  grid-row-start: 5;
-  grid-row-end: 5;
-  grid-column-start: 2;
-  grid-column-end: 2;
+  display: flex;
+  grid-auto-flow: column;
+  justify-content:center;
+  margin-left:10px;
+
   
 }
 
@@ -167,6 +195,10 @@ body {
   background-color: white;
   /* Anchura para admitir números de dos cifras*/
   width: 35px;
+  margin-right: 0.7rem;
+  border: 2px solid black;
+  padding: 2px;
+  
 }
 
 .precio {
@@ -174,21 +206,24 @@ body {
   background-color: white;
   /* Anchura para admitir números de tres cifras*/
   width: 47px;
+  border: 2px solid black;
+  padding: 2px;
 }
 
 .btns {
-  margin-bottom: 13px;
+  margin-top:0.7rem;
+  margin-bottom: 0.7rem;
   display:grid;
-  grid-row-start: 6;
-  grid-row-end: 6;
-  grid-column-start: 2;
-  grid-column-end: 2;
+  justify-content:center;
   grid-auto-flow:column;
   gap:10px;/*  hueco entre los botones*/
+  
 }
 
 .btn {
   padding: 5px 10px;
+  width: 100px;
+  height:35px;
   
 
 }
