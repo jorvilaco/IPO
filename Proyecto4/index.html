@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Piano</title>
+  </head>
+
+  <body>
+    <div class="lienzo">
+      <div class="cabecera">
+        <div class="titulo-proyecto">
+          PIANO - Equipo
+          <span class="equipo" id="equipo">
+            <!-- JS modifica el nombre del equipo  -->
+            meine
+          </span>
+        </div>
+      </div>
+
+      <div class="osciladores">
+        <button class="oscilador" id="sine">Sinusoidal</button>
+        <button class="oscilador" id="triangle">Triangle</button>
+        <button class="oscilador" id="square">Square</button>
+        <button class="oscilador" id="sawtooth">Sawtooth</button>
+      </div>
+
+      <div class="teclado">
+        <div id="do" class="tecla tecla--blanca">C</div>
+        <div id="doSostenido" class="tecla tecla--negra do-sostenido">C#</div>
+        <div id="re" class="tecla tecla--blanca">D</div>
+        <div id="reSostenido" class="tecla tecla--negra re-sostenido">D#</div>
+        <div id="mi" class="tecla tecla--blanca">E</div>
+        <div id="fa" class="tecla tecla--blanca">F</div>
+        <div id="faSostenido" class="tecla tecla--negra fa-sostenido">F#</div>
+        <div id="sol" class="tecla tecla--blanca">G</div>
+        <div id="solSostenido" class="tecla tecla--negra sol-sostenido">G#</div>
+        <div id="la" class="tecla tecla--blanca">A</div>
+        <div id="laSostenido" class="tecla tecla--negra la-sostenido">A#</div>
+        <div id="si" class="tecla tecla--blanca">B</div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
