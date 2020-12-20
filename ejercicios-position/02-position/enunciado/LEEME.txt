@@ -1,0 +1,2 @@
+Este ejercicio se centra en las propiedades de posicionamiento de elementos. 
+En este ejercicio se centra en la propiedad Z-index

@@ -1,0 +1,45 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: mintcream;
+}
+
+.zona {
+  border: 1px solid black;
+}
+
+.zona--01 {
+  width: 60vw;
+  height: 200px;
+  background-color: palegreen;
+}
+
+.zona--02 {
+  width: 80vw;
+  height: 400px;
+  background-color: yellow;
+  position: absolute;
+}
+
+.item {
+  height: 120px;
+  width: 120px;
+  color: white;
+}
+
+.item--01 {
+  background-color: blue;
+}
+.item--02 {
+  background-color: salmon;
+}
+.item--03 {
+  background-color: brown;
+}
+.item--04 {
+  background-color: red;
+}

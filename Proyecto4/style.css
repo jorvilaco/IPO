@@ -6,7 +6,6 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-
   outline: 1px solid red; 
 }
 
@@ -14,7 +13,6 @@
 body {
   background-color: whitesmoke;
   height: 100vh;
-
   /* Centra el contenido de la aplicacion */
   display:grid;
   place-items:center;
@@ -28,19 +26,23 @@ body {
   height: 60%;
   display: grid;
 
-
-  grid-template-columns: 20% 80%;
+  grid-template-columns: 15% 80%;
+  grid-template-rows: 10% 65%;
+  grid-row-gap: 10%;
+  grid-column-gap: 5%;
   justify-content:center;
+  padding:10px;
 }
 
 /**********************************************************************/
 .cabecera {
   background-color: black;
-
-  grid-row: auto;
-
   grid-column-start: 1;
-  grid-column-end: 2;
+  grid-column-end: 3;
+  border-radius: 15px 15px 0px 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 /**********************************************************************/
 
@@ -57,9 +59,15 @@ body {
 
 .osciladores {
   background-color: black;
-
   grid-column-start: 1;
   grid-column-end: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: space-around;
+  align-self: center;
+  height: 150px;
+  width: 90px;
 }
 
 .osciladores::before {
@@ -73,8 +81,10 @@ body {
 .oscilador {
   background-color: lightgray;
   border: none;
+  border-radius: 5px;
+  margin-right: 15px;
+  padding: 2px;
 }
-
 .oscilador--activo {
   background-color: lightyellow;
 }
@@ -85,20 +95,31 @@ body {
 
 /**********************************************************************/
 .teclado {
+  display: flex;
+  flex-direction: row;
   background-color: darkslategrey;
-
-  
+  position: relative;
+  z-index: 0;
+  width: 97%;
+  border-radius: 0px 0px 10px 10px;
 }
 
 /**********************************************************************/
 
 .tecla {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: flex-end;
   border: 1px solid black;
+  border-radius: 0px 0px 10px 10px;
 }
 
 /**********************************************************************/
 .tecla--blanca {
   background-color: white;
+  width: calc(100%*1/7);
+  z-index: 0;
 }
 
 .tecla--blanca:hover {
@@ -109,6 +130,10 @@ body {
 .tecla--negra {
   background-color: black;
   color: white;
+  height: calc(100%*2/3);
+  width: calc(100%*2/21);
+  z-index: 1;
+  position: absolute;
 }
 
 .tecla--negra:hover {
@@ -119,22 +144,26 @@ body {
 
 .do-sostenido {
   top: 0px;
-
+  left: calc( 100%*(2/21) ) ; /* 0 + 2*/
   /* left: calc(??????????) */
 }
 .re-sostenido {
   top: 0px;
+  left: calc(100%*5/21) ;  /* 3 + 2*/
   /* left: calc(??????????) */
 }
 .fa-sostenido {
   top: 0px;
+  left: calc(100%*11/21) ; /* 9 + 2*/
   /* left: calc(??????????) */
 }
 .sol-sostenido {
   top: 0px;
+  left: calc(100%*14/21) ; /* 12 + 2*/
   /* left: calc(??????????) */
 }
 .la-sostenido {
   top: 0px;
+  left: calc(100%*17/21); /* 15 + 2*/
   /* left: calc(??????????) */
 }

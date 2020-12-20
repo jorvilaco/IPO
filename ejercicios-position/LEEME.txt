@@ -1,0 +1,8 @@
+Los ejercicios tienen como cometido practicar y experimentar con los contenidos de la unidad.
+
+Cada ejercicio es un proyecto web incompleto (HTML, CSS, JS) que debe completarse
+para alcanzar el resultado deseado atendiendo a un enunciado expresado mediante información
+textual (LEEME.TXT) y un video que ilustra visualmente lo que se pide. 
+
+Salvo que se indique lo contrario, el objetivo es ampliar los ficheros
+de la carpeta de partida (en general, CSS y JS) sin alterar su contenido original.
