@@ -68,15 +68,19 @@ body {
   justify-content: space-around;
   align-self: center;
   height: 150px;
-  width: 90px;
+  width: 100px;
 }
 
 .osciladores::before {
-  content: "";
+  content: "╔══";
+  color: rgb(133, 131, 131);
+  width: 100%;
 }
 
 .osciladores::after {
-  content: "";
+  content: "══╝";
+  color:  rgb(133, 131, 131);
+  
 }
 
 .oscilador {
