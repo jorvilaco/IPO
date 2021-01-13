@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Tarjetas</title>
+  </head>
+  <body>
+    <div class="cabecera">
+      <div class="equipo">
+        Equipo -
+        <span id="equipo">
+          <!-- JS modifica el nombre del equipo  -->
+          meine
+        </span>
+      </div>
+
+      <div class="titulo-proyecto">TARJETAS</div>
+
+      <div class="mazos" id="mazos">
+        <!-- JS genera botones para cada mazo (lista de tarjetas) -->
+        <!-- <button class="mazo" id="pronombres">Pronombres</button> -->
+      </div>
+    </div>
+
+    <div class="lienzo">
+      <div id="visorDeTarjetas" class="visor-tarjetas">
+        <!-- JS añade las tarjetas -->
+        <!-- 
+          <div class="tarjeta">       
+             <div class="tarjeta--anverso"> </div>
+             <div class="tarjeta--reverso"> </div>
+          </div>
+         -->
+      </div>
+
+      <div class="navegacion">
+        <!--  Los botones incluyen entidades HTML para indicar 
+              avance con &laquo; (similar a >>)    
+              retroceso con &raquo; (similar a <<) 
+              https://developer.mozilla.org/es/docs/Glossary/Entidad 
+          
+        -->
+
+        <button id="anterior" class="desplazamiento">&laquo;</button>
+        <p id="referencia" class="referencia">
+          <!-- JS añade  n/m -->
+          <!-- n es numero de tarjeta visible (activa)  -->
+          <!-- m es numero total de tarjetas -->
+        </p>
+        <button id="siguiente" class="desplazamiento">&raquo;</button>
+      </div>
+    </div>
+
+    <script src="mazos.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

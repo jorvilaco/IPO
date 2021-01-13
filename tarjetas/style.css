@@ -1,0 +1,181 @@
+/**********************************************************************/
+/*  PROYECTO TARJETAS              */
+/*  EQUIPO XXXX                   */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+
+  /* outline: 1px solid red; */
+}
+
+/**********************************************************************/
+
+body {
+  background-color: wheat;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-size: 16px;
+
+  height: 100vh;
+  display: grid;
+}
+
+/**********************************************************************/
+.cabecera {
+  background-color: black;
+  color: #fff;
+
+  padding-top: 37px;
+  padding-right: 23px;
+
+  display: flex;
+}
+
+/**********************************************************************/
+.equipo {
+  text-transform: uppercase;
+}
+/**********************************************************************/
+
+.titulo-proyecto {
+  color: #fff;
+  text-align: center;
+}
+
+/**********************************************************************/
+
+.mazos {
+  background-color: darkgrey;
+  border: none;
+
+  padding: 11px;
+  border-radius: 7px;
+  display: flex;
+}
+
+.mazo {
+  background-color: whitesmoke;
+  padding: 7px;
+  border-radius: 7px;
+}
+
+/* Al sobrevolar el elemento, se modifica ligeramente su tamaño */
+
+.mazo:hover {
+  background-color: whitesmoke;
+}
+
+/**********************************************************************/
+
+.lienzo {
+  background-color: lightgray;
+  padding: 53px;
+
+  display: flex;
+}
+
+/**********************************************************************/
+.visor-tarjetas {
+  background-color: lightyellow;
+  /* Las tarjetas del mazo se pueden desplazar a la izquierda (siguiente) 
+     y a la derecha (anterior), de forma que sólo hay una visible  */
+  /* Para que sólo se muestre la tarjeta visible (activa)  */
+  overflow: hidden;
+
+  height: 400px;
+  width: 600px;
+}
+
+/**********************************************************************/
+.tarjeta {
+  background-color: whitesmoke;
+  height: 100%;
+  width: 100%;
+  font-size: 4rem;
+
+  /* De partida todas las tarjetas del mazo   
+     se posicionan (amontonan) unas encima de otras */
+}
+
+/* Las clases tarjeta--activa, tarjeta--izquierda y tarjeta--derecha 
+     aplican translaciones para separar las cartas en
+     montones a la izquierda y derecha, dejando en el visor 
+     sólo una tarjeta visible (la tarjeta activa)
+*/
+
+.tarjeta--activa {
+  cursor: pointer;
+}
+
+.tarjeta--izquierda {
+  background-color: whitesmoke;
+}
+
+.tarjeta--derecha {
+  background-color: whitesmoke;
+}
+
+/**********************************************************************/
+
+/* Las clases --anverso y --reverso modelan los dos lados de la tarjeta */
+.tarjeta--anverso,
+.tarjeta--reverso {
+  height: 100%;
+  width: 100%;
+
+  /* Evita que durante el volteo se solapen los contenidos  
+     del anverso y reverso de la tarjeta activa */
+  /* https://developer.mozilla.org/es/docs/Web/CSS/backface-visibility */
+  backface-visibility: hidden;
+
+  border: 1px double black;
+
+  /* Los dos lados se posicionan uno encima del otro y 
+     mediante rotaciones se simula el efecto de voltear 
+     la carta activa para intercambiar el lado visible  */
+}
+
+/* La presencia o no de la clase .tarjeta--volteo efectúa el
+   volteo y establece que lado de la tarjeta es visible  
+*/
+
+.tarjeta--anverso {
+  background-color: whitesmoke;
+}
+
+.tarjeta--reverso {
+  background-color: whitesmoke;
+}
+
+.tarjeta--volteo .tarjeta--anverso {
+  background-color: whitesmoke;
+}
+
+.tarjeta--volteo .tarjeta--reverso {
+  background-color: whitesmoke;
+}
+
+/**********************************************************************/
+
+.navegacion {
+  font-size: 2rem;
+
+  display: flex;
+  gap: 11px;
+}
+
+.desplazamiento {
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+  font-size: 2rem;
+}
+
+.referencia {
+  font-size: 2rem;
+  width: 73px;
+  text-align: center;
+}
+
+/**********************************************************************/
