@@ -19,6 +19,7 @@ body {
 
   height: 100vh;
   display: grid;
+  grid-template-columns:  minmax(200px, 20%) 1frs;
 }
 
 /**********************************************************************/

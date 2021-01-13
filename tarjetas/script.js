@@ -4,7 +4,7 @@
 // El nombre será mostrada en el elemento HTML #equipo de la página web
 // Cada equipo debe actualizar la constante con su nombre de equipo
 
-const nombreDelEquipoDeLaboratorio = "XXXXX";
+const nombreDelEquipoDeLaboratorio = "PLATA";
 document.getElementById("equipo").textContent = nombreDelEquipoDeLaboratorio;
 
 // -------------  Variables de interacción
