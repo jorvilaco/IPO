@@ -111,10 +111,14 @@ body {
 
 .tarjeta--izquierda {
   background-color: whitesmoke;
+  /* Añadido para que se cambie las tarjetas*/
+  display : none;
 }
 
 .tarjeta--derecha {
   background-color: whitesmoke;
+  /* Añadido para que se cambie las tarjetas*/
+  display : none;
 }
 
 /**********************************************************************/
@@ -151,6 +155,8 @@ body {
 
 .tarjeta--volteo .tarjeta--anverso {
   background-color: whitesmoke;
+  /* Añadido para que cambie a la tarjeta solución*/
+  display: none;
 }
 
 .tarjeta--volteo .tarjeta--reverso {

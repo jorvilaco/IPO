@@ -61,6 +61,15 @@ function comienzo() {
 function ___muestraTarjetaAnterior() {
   // Solo es coherente mover a la derecha una tarjeta que no
   // sea la primera del mazo
+
+  if (numeroDeTarjetaActiva > 0){
+    elementos = document.querySelectorAll('[data-index]')
+      elementos[numeroDeTarjetaActiva-1].className = claseTarjetaActiva
+      elementos[numeroDeTarjetaActiva].className = claseTarjetaEnLaDerecha
+      numeroDeTarjetaActiva -= 1
+      actualizaNavegacion()
+
+  }
   // El efecto de desplazamiento se obtiene actualizando
   // los estilos de las tarjeta implicadas de forma
   // que la activa se desplace a la derecha
@@ -72,6 +81,15 @@ function ___muestraTarjetaAnterior() {
 function ___muestraTarjetaSiguiente() {
   // Solo es posible mover a la izquierda una tarjeta que no
   // sea la última del mazo
+  if(numeroDeTarjetaActiva < numeroDeTarjetasDelMazo-1){
+    console.log(numeroDeTarjetaActiva)
+    console.log(numeroDeTarjetasDelMazo)
+      elementos = document.querySelectorAll('[data-index]')
+      elementos[numeroDeTarjetaActiva].className = claseTarjetaEnLaIzquierda
+      elementos[numeroDeTarjetaActiva+1].className = claseTarjetaActiva
+      numeroDeTarjetaActiva += 1
+      actualizaNavegacion()
+  }
   // El efecto de desplazamiento se obtiene actualizando
   // los estilos de las tarjeta implicadas de forma
   // que la activa se desplace a la izquierda
@@ -151,6 +169,13 @@ function ___volteaTarjeta(elemento) {
   // El método closest permite recorrer el DOM para seleccionar
   // el elemento tarjeta que lo contiene
   // https://developer.mozilla.org/es/docs/Web/API/Element/closest
+  tarjetaVoltear = elemento.closest(".tarjeta--activa")
+  if (tarjetaVoltear.className.includes(claseParaVoltearUnaTarjeta)){
+    tarjetaVoltear.className = claseTarjetaActiva
+  }else {
+    tarjetaVoltear.className += " "+ claseParaVoltearUnaTarjeta
+  }
+  
 }
 
 //  Funciones auxiliares
