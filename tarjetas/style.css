@@ -19,7 +19,7 @@ body {
 
   height: 100vh;
   display: grid;
-  grid-template-columns:  minmax(200px, 20%) 1frs;
+  grid-template-columns:  minmax(200px, 20%);
   /*grid-template-columns:  minmax(400px, 80%) 1frs;*/
 }
 
@@ -58,6 +58,7 @@ body {
   padding: 11px;
   border-radius: 7px;
   display: flex;
+  /* Nuevo*/
   flex-direction: column;
 }
 
@@ -78,9 +79,11 @@ body {
 .lienzo {
   background-color: lightgray;
   padding: 53px;
+
+  display: flex;
+  /* Nuevo*/
   grid-column-start: 2;
   grid-column-end: 2;
-  display: flex;
   flex-direction: column;
   align-items: center;
   
@@ -98,12 +101,8 @@ body {
   
   height: 400px;
   width: 600px;
-
+  /* Nuevo*/
   display: flex;
-  
-
-
-
 
 }
 
@@ -114,12 +113,18 @@ body {
   height: 400px;
   width: 600px;
 
-  
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   
   
   font-size: 4rem;
   /* De partida todas las tarjetas del mazo   
      se posicionan (amontonan) unas encima de otras */
+    transition: 1s;
+    position: absolute;
+    backface-visibility: hidden;
 }
 
 /* Las clases tarjeta--activa, tarjeta--izquierda y tarjeta--derecha 
@@ -130,22 +135,23 @@ body {
 
 .tarjeta--activa {
   cursor: pointer;
+  
   height: 400px;
   width: 600px;
-  
   
 }
 
 .tarjeta--izquierda {
   background-color: whitesmoke;
   /* Añadido para que se cambie las tarjetas*/
-  display : hidden;
+  transform: translate(-100%);
+  visibility: hidden;
 }
 
 .tarjeta--derecha {
   background-color: whitesmoke;
-  /* Añadido para que se cambie las tarjetas*/
-  display : hidden;
+  transform: translate(+100%);
+  visibility: hidden;
 }
 
 /**********************************************************************/
@@ -153,19 +159,17 @@ body {
 /* Las clases --anverso y --reverso modelan los dos lados de la tarjeta */
 .tarjeta--anverso,
 .tarjeta--reverso {
-  height: 400px;
-  width: 600px;
+  height: 100%;
+  width: 100%;
+  
+  
+
   text-align: center;
   display: flex;
   flex-direction: column;
   justify-content: center;
- 
 
- 
-
- 
-
-
+  transition: transform 0.6s;
 
   /* Evita que durante el volteo se solapen los contenidos  
      del anverso y reverso de la tarjeta activa */
@@ -177,6 +181,8 @@ body {
   /* Los dos lados se posicionan uno encima del otro y 
      mediante rotaciones se simula el efecto de voltear 
      la carta activa para intercambiar el lado visible  */
+     position: absolute;
+  
 }
 
 /* La presencia o no de la clase .tarjeta--volteo efectúa el
@@ -185,22 +191,22 @@ body {
 
 .tarjeta--anverso {
   background-color: whitesmoke;
-
 }
 
 .tarjeta--reverso {
   background-color: whitesmoke;
-
+  transform: rotateX(180deg);
 }
 
 .tarjeta--volteo .tarjeta--anverso {
   background-color: whitesmoke;
   /* Añadido para que cambie a la tarjeta solución*/
-  display: none;
+  transform: rotateX(180deg);
 }
 
 .tarjeta--volteo .tarjeta--reverso {
   background-color: whitesmoke;
+  transform: rotateX(0deg);
 }
 
 /**********************************************************************/
