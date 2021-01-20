@@ -1,0 +1,193 @@
+/**********************************************************************/
+/*  PROYECTO RELAX            */
+/*  EQUIPO XXXXXX                  */
+
+:root {
+  --diametro-circulo: 520px;
+  --tiempo-rotacion: 7800;
+  --tiempo-expansion: 3000;
+
+  --diametro-punto: calc(0.05 * var(--diametro-circulo));
+
+  --color-cabecera: #afafaf;
+  --color-texto: #000;
+  --color-lienzo: #a2a2a2;
+  --color-punto: #fff;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+
+  /* outline: 1px solid red; */
+}
+
+/**********************************************************************/
+
+body {
+  font-family: sans-serif;
+  font-size: 16px;
+
+  height: 100vh;
+
+  display: grid;
+  grid-template-rows: auto 1fr;
+}
+
+/**********************************************************************/
+.cabecera {
+  padding: 1.5rem;
+
+  background-color: var(--color-cabecera);
+  color: var(--color-texto);
+  font-size: 1.5rem;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  gap: 23px;
+}
+
+/**********************************************************************/
+.equipo {
+  text-transform: uppercase;
+}
+/**********************************************************************/
+
+.titulo-proyecto {
+  color: var(--color-texto);
+  text-align: center;
+}
+
+/**********************************************************************/
+
+.lienzo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: var(--color-lienzo);
+  background-image: var(--gradiente-lienzo);
+}
+
+/**********************************************************************/
+
+.circulo {
+  height: var(--diametro-circulo);
+  width: var(--diametro-circulo);
+  border-radius: 50%;
+
+  background-color: var(--color-punto);
+  background-image: var(--gradiente-circulo);
+
+  /* Referencia de coordenadas para el eje y el mensaje */
+  position: relative;
+}
+
+.circulo--crece {
+  --expansion: calc(var(--tiempo-expansion) * 1ms);
+  animation: crecimiento var(--expansion) linear forwards;
+}
+
+.circulo--decrece {
+  --expansion: calc(var(--tiempo-expansion) * 1ms);
+  animation: decrecimiento var(--expansion) linear forwards;
+}
+
+/**********************************************************************/
+
+.circulo-interno {
+  /* El circulo interno tiene una función decorativa es decorativo */
+
+  height: 90%;
+  width: 90%;
+  border-radius: 50%;
+
+  position: absolute;
+  top: 5%;
+  left: 5%;
+
+  background-color: var(--color-cabecera);
+}
+
+/**********************************************************************/
+
+.mensaje {
+  /* Muestra el mensaje en el centro del círculo */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  color: var(--color-texto);
+  font-size: 2rem;
+}
+
+/**********************************************************************/
+
+.eje {
+  /* El eje se situa en el centro del circulo y 
+     su longitud es ligeramente superior al radio de 
+     circulo para que mostrar el recorrido 
+     del punto a través del mimso */
+
+  --radio: 50%;
+  --incremento: 10%;
+  --anchura: var(--diametro-punto);
+  --altura: calc(var(--radio) + var(--incremento));
+
+  width: var(--anchura);
+  height: var(--altura);
+
+  /* El eje se situa en el centro del circulo */
+  /* El ajuste tiene en cuenta el tamaño del eje */
+  position: absolute;
+  top: calc(var(--incremento) * -1);
+  left: calc(50% - var(--anchura) / 2);
+
+  --rotacion: calc(var(--tiempo-rotacion) * 1ms);
+  animation: rotacion var(--rotacion) linear forwards infinite;
+  /* Para establecer el punto de referencia de la rotación  */
+  transform-origin: bottom center;
+}
+
+.punto {
+  width: var(--diametro-punto);
+  height: var(--diametro-punto);
+  border-radius: 50%;
+
+  background-color: var(--color-punto);
+}
+
+@keyframes rotacion {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes crecimiento {
+  from {
+    transform: scale(1);
+  }
+
+  to {
+    transform: scale(1.2);
+  }
+}
+
+@keyframes decrecimiento {
+  from {
+    transform: scale(1.2);
+  }
+
+  to {
+    transform: scale(1);
+  }
+}
