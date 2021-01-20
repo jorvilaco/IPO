@@ -35,18 +35,21 @@ body {
   display: flex;
   flex-direction: column;
   z-index: 1;
+  gap: 20px
 }
 
 /**********************************************************************/
 .equipo {
   text-transform: uppercase;
   text-align: right;/*POR SERGIO*/
+  margin-left: auto;
 }
 /**********************************************************************/
 
 .titulo-proyecto {
   color: #fff;
   text-align: center;
+  margin-left: auto;
 }
 
 /**********************************************************************/
@@ -60,6 +63,8 @@ body {
   display: flex;
   /* Nuevo*/
   flex-direction: column;
+  margin-left: 50%;
+  gap: 10px;
 }
 
 .mazo {
