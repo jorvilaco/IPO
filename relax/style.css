@@ -28,7 +28,7 @@ Se ha empleado una ligera modificación de la paleta anterior
   --color-lienzo: #76e8f7;
   --color-punto: #d5ffff;
 
-  --gradiente-circulo: transparent;
+  --gradiente-circulo: conic-gradient(#41c1f1 50deg, #00a9bf 100deg, #0069ff);
   --gradiente-lienzo: transparent;
 }
 
