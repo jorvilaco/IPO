@@ -18,6 +18,10 @@
 /**********************************************************************/
 .lienzo-01 {
   background-color: var(--color-lienzo-01);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 /**********************************************************************/
