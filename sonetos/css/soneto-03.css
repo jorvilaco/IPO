@@ -1,0 +1,61 @@
+/**********************************************************************/
+/*  PROYECTO SONETOS              */
+/*  EQUIPO XXXXXX                  */
+/**********************************************************************/
+/*  COMENTARIO SOBRE EL DISEÑO
+
+
+/**********************************************************************/
+
+/*  Estilos particulares para el soneto 03 */
+
+:root {
+  --color-lienzo-03: hsl(3, 0%, 90%);
+  --color-soneto-03: #fff;
+  --color-texto-03: #000;
+}
+
+/**********************************************************************/
+.lienzo-03 {
+  background-color: var(--color-lienzo-03);
+}
+
+/**********************************************************************/
+
+.soneto-03 {
+  background-color: var(--color-soneto-03);
+  color: var(--color-texto-03);
+}
+
+.soneto-03 .titulo {
+  color: currentColor;
+}
+
+.soneto-03 .autor {
+  color: currentColor;
+}
+
+.soneto-03 .versos {
+  color: currentColor;
+}
+
+.soneto-03 .verso {
+  color: currentColor;
+}
+
+.soneto-03 .v-01,
+.soneto-03 .v-02,
+.soneto-03 .v-03,
+.soneto-03 .v-04,
+.soneto-03 .v-05,
+.soneto-03 .v-06,
+.soneto-03 .v-05,
+.soneto-03 .v-08,
+.soneto-03 .v-09,
+.soneto-03 .v-10,
+.soneto-03 .v-11,
+.soneto-03 .v-12,
+.soneto-03 .v-13,
+.soneto-03 .v-14 {
+  color: currentColor;
+}

@@ -1,0 +1,89 @@
+/**********************************************************************/
+/*  PROYECTO SONETOS              */
+/*  EQUIPO XXXXXX                  */
+
+:root {
+  --color-cabecera: hsl(3, 0%, 10%);
+  --color-cabecera-claro: hsl(3, 0%, 60%);
+  --color-texto-cabecera: hsl(3, 0%, 100%);
+  --color-lienzo: hsl(3, 0%, 90%);
+
+  --fuente-cabecera: sans-serif;
+  --fuente-tamaño: 16px;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+
+  /* outline: 1px solid red; */
+}
+
+/**********************************************************************/
+
+body {
+  font-size: var(--fuente-tamaño);
+
+  height: 100vh;
+  display: grid;
+  grid-template-columns: minmax(250px, 20%) 1fr;
+}
+
+/**********************************************************************/
+.cabecera {
+  padding: 3rem 1rem;
+
+  font-family: var(--fuente-cabecera);
+  background-color: var(--color-cabecera);
+  color: var(--color-texto-cabecera);
+
+  font-size: 1.5rem;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-end;
+
+  gap: 1rem;
+}
+
+/**********************************************************************/
+.equipo {
+  text-transform: uppercase;
+}
+/**********************************************************************/
+
+.titulo-proyecto {
+  color: var(--color-texto-cabecera);
+  text-align: center;
+}
+
+/**********************************************************************/
+
+.lista-sonetos {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-end;
+
+  gap: 1rem;
+}
+
+.lista-sonetos__item {
+  width: 100%;
+  padding: 0.8rem 1rem;
+  border-radius: 7px;
+  border: none;
+
+  background-color: var(--color-cabecera-claro);
+  color: var(--color-texto);
+  font-family: var(--fuente-cabecera);
+  font-size: 0.9rem;
+}
+
+/**********************************************************************/
+.lienzo {
+  background-color: var(--color-lienzo);
+}
