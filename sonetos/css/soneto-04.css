@@ -19,6 +19,10 @@
 /**********************************************************************/
 .lienzo-04 {
   background-color: var(--color-lienzo-04);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 /**********************************************************************/

@@ -7,12 +7,19 @@
 
 /**********************************************************************/
 
+
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sacramento&display=swap');
+
 /*  Estilos particulares para el soneto 01 */
 
 :root {
-  --color-lienzo-01: hsl(3, 0%, 90%);
-  --color-soneto-01: #fff;
-  --color-texto-01: #000;
+  --color-lienzo-01: rgb(201, 176, 149);
+  --color-soneto-01: rgb(231, 231, 231);
+  --color-texto-01: black;
+
+  --color-titulo-01: rgb(153, 101, 42);
 }
 
 /**********************************************************************/
@@ -22,6 +29,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  
 }
 
 /**********************************************************************/
@@ -29,18 +37,35 @@
 .soneto-01 {
   background-color: var(--color-soneto-01);
   color: var(--color-texto-01);
+
+  box-shadow: 15px 15px 15px black;
+  border-radius: 20px;
+  padding:1em 6em;
 }
 
 .soneto-01 .titulo {
   color: currentColor;
+  font-size: 3em;
+  
+  text-align: center;
+  font-family: 'Dancing Script', cursive;
+  font-weight:  700;
+  color: var(--color-titulo-01);
 }
 
 .soneto-01 .autor {
   color: currentColor;
+  text-align: center;
+
+  font-size: 2em;
+  margin-top: 0.7em;
 }
+
+
 
 .soneto-01 .versos {
   color: currentColor;
+  font-size: 1.9em;
 }
 
 .soneto-01 .verso {
@@ -53,7 +78,7 @@
 .soneto-01 .v-04,
 .soneto-01 .v-05,
 .soneto-01 .v-06,
-.soneto-01 .v-05,
+.soneto-01 .v-07,
 .soneto-01 .v-08,
 .soneto-01 .v-09,
 .soneto-01 .v-10,
@@ -62,4 +87,12 @@
 .soneto-01 .v-13,
 .soneto-01 .v-14 {
   color: currentColor;
+  font-family: 'Sacramento', cursive;
+}
+
+.soneto-01 .v-01,
+.soneto-01 .v-05,
+.soneto-01 .v-09,
+.soneto-01 .v-12{
+  padding-top: 1em;
 }
