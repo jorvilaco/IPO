@@ -4,15 +4,20 @@
 /**********************************************************************/
 /*  COMENTARIO SOBRE EL DISEÑO
 
+Hemos usado tonalidades verdes para transmitir la sensación de naturaleza alrededor, ya que en 
+el soneto se emplean multiples metáforas relacionadas con elementos propios de la naturaleza.
 
 /**********************************************************************/
 
 /*  Estilos particulares para el soneto 02 */
-
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Parisienne&display=swap');
 :root {
-  --color-lienzo-02: hsl(3, 0%, 90%);
-  --color-soneto-02: #fff;
+  --color-lienzo-02: rgb(187, 201, 149);
+  --color-soneto-02: rgb(231, 231, 231);
   --color-texto-02: #000;
+
+  --color-titulo-02: rgb(92, 153, 42);
 }
 
 /**********************************************************************/
@@ -29,18 +34,33 @@
 .soneto-02 {
   background-color: var(--color-soneto-02);
   color: var(--color-texto-02);
+  box-shadow: 15px 15px 15px black;
+  border-radius: 20px;
+  padding:1em 6em;
 }
 
 .soneto-02 .titulo {
   color: currentColor;
+  font-size: 3em;
+  
+  text-align: center;
+  font-family: 'Dancing Script', cursive;
+  font-weight:  700;
+  color: var(--color-titulo-02);
 }
 
 .soneto-02 .autor {
   color: currentColor;
+  text-align: center;
+
+  font-size: 2em;
+  margin-top: 0.7em;
+  font-style: italic;
 }
 
 .soneto-02 .versos {
   color: currentColor;
+  font-size: 1.9em;
 }
 
 .soneto-02 .verso {
@@ -53,7 +73,7 @@
 .soneto-02 .v-04,
 .soneto-02 .v-05,
 .soneto-02 .v-06,
-.soneto-02 .v-05,
+.soneto-02 .v-07,
 .soneto-02 .v-08,
 .soneto-02 .v-09,
 .soneto-02 .v-10,
@@ -62,4 +82,12 @@
 .soneto-02 .v-13,
 .soneto-02 .v-14 {
   color: currentColor;
+  font-family: 'Parisienne', cursive;
+}
+
+.soneto-02 .v-01,
+.soneto-02 .v-05,
+.soneto-02 .v-08,
+.soneto-02 .v-11{
+  padding-top: 1em;
 }

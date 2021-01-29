@@ -5,15 +5,20 @@
 /**********************************************************************/
 /*  COMENTARIO SOBRE EL DISEÑO
 
+Empleamos una fuente que representa sofisticación, ya que éste concepto está presente en el soneto.
 
+Empleamos un fondo claro para transmitir tranquilidad y elegancia.
 /**********************************************************************/
 
 /*  Estilos particulares para el soneto 04 */
-
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Parisienne&display=swap');
 :root {
-  --color-lienzo-04: hsl(3, 0%, 90%);
-  --color-soneto-04: #fff;
+  --color-lienzo-04: rgb(149, 201, 184);
+  --color-soneto-04: rgb(231, 231, 231);
   --color-texto-04: #000;
+
+  --color-titulo-04: rgb(42, 153, 110);
 }
 
 /**********************************************************************/
@@ -30,18 +35,33 @@
 .soneto-04 {
   background-color: var(--color-soneto-04);
   color: var(--color-texto-04);
+  box-shadow: 15px 15px 15px black;
+  border-radius: 20px;
+  padding:1em 6em;
 }
 
 .soneto-04 .titulo {
   color: currentColor;
+  font-size: 3em;
+  
+  text-align: center;
+  font-family: 'Dancing Script', cursive;
+  font-weight:  700;
+  color: var(--color-titulo-04);
 }
 
 .soneto-04 .autor {
   color: currentColor;
+  text-align: center;
+
+  font-size: 2em;
+  margin-top: 0.7em;
+  font-style: italic;
 }
 
 .soneto-04 .versos {
   color: currentColor;
+  font-size: 1.9em;
 }
 
 .soneto-04 .verso {
@@ -54,7 +74,7 @@
 .soneto-04 .v-04,
 .soneto-04 .v-05,
 .soneto-04 .v-06,
-.soneto-04 .v-05,
+.soneto-04 .v-07,
 .soneto-04 .v-08,
 .soneto-04 .v-09,
 .soneto-04 .v-10,
@@ -63,4 +83,12 @@
 .soneto-04 .v-13,
 .soneto-04 .v-14 {
   color: currentColor;
+  font-family: 'Parisienne', cursive;
+}
+
+.soneto-04 .v-01,
+.soneto-04 .v-05,
+.soneto-04 .v-09,
+.soneto-04 .v-12{
+  padding-top: 1em;
 }

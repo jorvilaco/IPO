@@ -4,15 +4,25 @@
 /**********************************************************************/
 /*  COMENTARIO SOBRE EL DISEÑO
 
+Empleamos tonos rojizos para representar la agresividad inherente en el soneto
+de Quevedo.
+Al igual que en el resto de sonetos, optamos por fondo claro para que no 
+resalte demasiado.
+
+La fuente ha sido seleccionada ya que recuerda a la de un niño, y nos recuerda
+a la forma infantil con la que los niños se burlan unos de otros.
 
 /**********************************************************************/
 
 /*  Estilos particulares para el soneto 03 */
-
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Schoolbell&display=swap');
 :root {
-  --color-lienzo-03: hsl(3, 0%, 90%);
-  --color-soneto-03: #fff;
+  --color-lienzo-03: rgb(201, 149, 149);
+  --color-soneto-03: rgb(231, 231, 231);
   --color-texto-03: #000;
+
+  --color-titulo-03: rgb(153, 42, 42);
 }
 
 /**********************************************************************/
@@ -29,18 +39,33 @@
 .soneto-03 {
   background-color: var(--color-soneto-03);
   color: var(--color-texto-03);
+  box-shadow: 15px 15px 15px black;
+  border-radius: 20px;
+  padding:1em 6em;
 }
 
 .soneto-03 .titulo {
   color: currentColor;
+  font-size: 3em;
+  
+  text-align: center;
+  font-family: 'Dancing Script', cursive;
+  font-weight:  700;
+  color: var(--color-titulo-03);
 }
 
 .soneto-03 .autor {
   color: currentColor;
+  text-align: center;
+
+  font-size: 2em;
+  margin-top: 0.7em;
+  font-style: italic;
 }
 
 .soneto-03 .versos {
   color: currentColor;
+  font-size: 1.9em;
 }
 
 .soneto-03 .verso {
@@ -53,7 +78,7 @@
 .soneto-03 .v-04,
 .soneto-03 .v-05,
 .soneto-03 .v-06,
-.soneto-03 .v-05,
+.soneto-03 .v-07,
 .soneto-03 .v-08,
 .soneto-03 .v-09,
 .soneto-03 .v-10,
@@ -62,4 +87,11 @@
 .soneto-03 .v-13,
 .soneto-03 .v-14 {
   color: currentColor;
+  font-family: Schoolbell;
+}
+.soneto-03 .v-01,
+.soneto-03 .v-05,
+.soneto-03 .v-09,
+.soneto-03 .v-12{
+  padding-top: 1em;
 }
